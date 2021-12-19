@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container,
+.yellow,
+.red {
+  border: 1px solid black;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 50vh;
+  width: 50vw;
+}
+.yellow,
+.red {
+  width: 50%;
+  height: 100%;
+}
+.yellow {
+  background-color: yellow;
+}
+.red {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  background-color: red;
+}
+@media only screen and (max-width: 480px) {
+  .yellow,
+  .red {
+    width: 100%;
+  }
+  .red {
+    height: 50%;
+  }
+}
